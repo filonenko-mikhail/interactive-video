@@ -1,6 +1,6 @@
 <ximpel>
   <config>
-    <enableControls>false</enableControls>
+    <enableControls>true</enableControls>
     <controlsDisplayMethod>fixed</controlsDisplayMethod>
     <showScore>false</showScore>
   </config>
