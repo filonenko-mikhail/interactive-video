@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ximpel>
+    <playlist>
+        <subject id="mySubject1" leadsTo="mySubject2">
+            <media>
+                <video>
+                    <source file="media/movie1" extensions="mp4" types="video/mp4" leadsTo="mySubject4"/>
+                    <overlay text="Пельмени" height="200px" width="700px" leadsTo="mySubject2" x="100px" y="100px" backgroundColor="#ff00ff"/>
+                    <overlay text="Цветы" height="200px" width="700px" leadsTo="mySubject3" x="100px" y="500px" backgroundColor="#ff00ff"/>
+                </video>
+            </media>
+        </subject>
+        <subject id="mySubject2" leadsTo="mySubject4">
+            <media>
+                <video>
+                    <source file="media/mov2" extensions="mp4" types="video/mp4" leadsTo="mySubject4"/>
+                </video>
+            </media>
+        </subject>
+        <subject id="mySubject3" leadsTo="mySubject4">
+            <media>
+                <video>
+                    <source file="media/mov3" extensions="mp4" types="video/mp4" leadsTo="mySubject4"/>
+                </video>
+            </media>
+        </subject>
+        <subject id="mySubject4">
+            <media>
+                <image src="media/end.png">
+                    <overlay text="Обратно" height="200px" width="700px" leadsTo="mySubject1" x="100px" y="100px" backgroundColor="#ff00ff"/>
+                </image>
+            </media>
+        </subject>
+    </playlist>
+</ximpel>
