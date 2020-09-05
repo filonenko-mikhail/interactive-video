@@ -20,9 +20,10 @@
 
         <subject id="subj1_2a">
             <media>
-                <video duration="5" leadsTo="subj1_2a_last">
+                <youtube id="BT7zi-fANFo" leadsTo="subj1_2a_last" duration="5" />
+                <!--<video leadsTo="subj1_2a_last" duration="5">
                     <source file="media/1_2a" extensions="mov" types="video/mp4"  />
-                </video>
+                </video>-->
             </media>
         </subject>
 
@@ -38,25 +39,28 @@
 
         <subject id="subj_forgive_or_revenge">
             <media>
-                <video duration="10" leadsTo="subj_end">
+                <youtube id="tZ-oa5xCR-Y" leadsTo="subj_end" duration="10"/>
+                <!--<video duration="10" leadsTo="subj_end">
                     <source file="media/forgive_or_revenge" extensions="mov" types="video/mp4"  />
-                </video>
+                </video>-->
             </media>
         </subject>
 
         <subject id="subj_study_or_job">
             <media>
-                <video duration="10" leadsTo="subj_end">
+                <youtube id="y103QHXZiPE" leadsTo="subj_end" duration="10"/>
+                <!--<video duration="10" leadsTo="subj_end">
                     <source file="media/study_or_job" extensions="mov" types="video/mp4"  />
-                </video>
+                </video>-->
             </media>
         </subject>
 
         <subject id="subj1_2b">
             <media>
-                <video leadsTo="subj_end">
+                <youtube id="y103QHXZiPE" leadsTo="subj_end"/>
+                <!--<video leadsTo="subj_end">
                     <source file="media/1_2b" extensions="mov" types="video/mp4"  />
-                </video>
+                </video>-->
             </media>
         </subject>
 
