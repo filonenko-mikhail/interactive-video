@@ -3,9 +3,10 @@
     <playlist>
         <subject id="subj1">
             <media>
-                <video duration="5" leadsTo="subj1_last">
+                <youtube id="CJJc57e_8z4" leadsTo="subj1_last" duration="10"/>
+                <!--<video duration="5" leadsTo="subj1_last">
                     <source file="media/1" extensions="mov" types="video/mp4"  />
-                </video>
+                </video>-->
             </media>
         </subject>
         <subject id="subj1_last">
