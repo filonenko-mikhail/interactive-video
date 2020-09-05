@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>XIMPEL</title>
+    <title>Интерактив</title>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
     <link rel="stylesheet" href="ximpel/ximpel.css" type="text/css" />
     <script type="text/javascript" src="ximpel/ximpel.min.js"></script>
 
     <script type="text/javascript">
-      $( document ).ready(function(){
+     $( document ).ready(function(){
 
         // Define a XimpelApp object by passing the following arguments:
         // - The appId which is just a unique name for this presentation.
@@ -35,8 +35,6 @@
           // already playing if autoplay was set to true). This function can be used to interact
           // with the ximpel app using external javascript.
           var player = myApp.ximpelPlayer;
-
-
         }.bind(this));
       });
     </script>
@@ -44,10 +42,6 @@
 
   <body>
     <div id="ximpel">
-      <div class="scoreContainer">
-        <div class="score">Score: <span id="scoreA"></span></div>
-        <!-- Add more score containers here -->
-      </div>
     </div>
   </body>
 </html>

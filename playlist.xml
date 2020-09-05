@@ -1,33 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ximpel>
     <playlist>
-        <subject id="mySubject1" leadsTo="mySubject2">
+        <subject id="subj1">
             <media>
-                <video>
-                    <source file="media/movie1" extensions="mp4" types="video/mp4" leadsTo="mySubject4"/>
-                    <overlay text="Пельмени" height="200px" width="700px" leadsTo="mySubject2" x="100px" y="100px" backgroundColor="#ff00ff"/>
-                    <overlay text="Цветы" height="200px" width="700px" leadsTo="mySubject3" x="100px" y="500px" backgroundColor="#ff00ff"/>
+                <video duration="5" leadsTo="subj1_last">
+                    <source file="media/1" extensions="mov" types="video/mp4"  />
                 </video>
             </media>
         </subject>
-        <subject id="mySubject2" leadsTo="mySubject4">
+        <subject id="subj1_last">
             <media>
-                <video>
-                    <source file="media/mov2" extensions="mp4" types="video/mp4" leadsTo="mySubject4"/>
+                <image src="media/1_last.png" duraction="5">
+                    <overlay text="" height="1080px" width="960px" leadsTo="subj1_2a" x="0" y="0" backgroundColor="#000000" alpha="0" hoverAlpha="0.3" />
+                    <overlay text="" height="1080px" width="960px" leadsTo="subj1_2b" x="960" y="0" backgroundColor="#000000" alpha="0" hoverAlpha="0.3"/>
+                </image>
+            </media>
+        </subject>
+
+        <subject id="subj1_2a">
+            <media>
+                <video duration="5" leadsTo="subj1_2a_last">
+                    <source file="media/1_2a" extensions="mov" types="video/mp4"  />
                 </video>
             </media>
         </subject>
-        <subject id="mySubject3" leadsTo="mySubject4">
+
+        <subject id="subj1_2a_last">
             <media>
-                <video>
-                    <source file="media/mov3" extensions="mp4" types="video/mp4" leadsTo="mySubject4"/>
+                <image duration="5" src="media/1_2a_last.png" >
+                    <overlay leadsTo="subj_forgive_or_revenge" text="" height="1080px" width="960px"
+                             x="0" y="0" backgroundColor="#000000" alpha="0" hoverAlpha="0.3" />
+                    <overlay leadsTo="subj_study_or_job" text="" height="1080px" width="960px" x="960" y="0" backgroundColor="#000000" alpha="0" hoverAlpha="0.3"/>
+                </image>
+            </media>
+        </subject>
+
+        <subject id="subj_forgive_or_revenge">
+            <media>
+                <video duration="10" leadsTo="subj_end">
+                    <source file="media/forgive_or_revenge" extensions="mov" types="video/mp4"  />
                 </video>
             </media>
         </subject>
-        <subject id="mySubject4">
+
+        <subject id="subj_study_or_job">
             <media>
-                <image src="media/end.png">
-                    <overlay text="Обратно" height="200px" width="700px" leadsTo="mySubject1" x="100px" y="100px" backgroundColor="#ff00ff"/>
+                <video duration="10" leadsTo="subj_end">
+                    <source file="media/study_or_job" extensions="mov" types="video/mp4"  />
+                </video>
+            </media>
+        </subject>
+
+        <subject id="subj1_2b">
+            <media>
+                <video leadsTo="subj_end">
+                    <source file="media/1_2b" extensions="mov" types="video/mp4"  />
+                </video>
+            </media>
+        </subject>
+
+        <subject id="subj_end">
+            <media>
+                <image src="media/end.png" >
+                    <overlay leadsTo="subj1"
+                             text="Обратно"
+                             height="480px" width="1920px" x="0" y="600" backgroundColor="#FFFFFF" alpha="0.3" hoverAlpha="0.7" />
                 </image>
             </media>
         </subject>
